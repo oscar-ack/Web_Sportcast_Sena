@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronósticos Fútbol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pronósticos Fútbol</h1>
+    </header>
+    <div style="text-align: center;"> 
+    <img src="Sportcast.jpg" alt="">
+    </div>
+    <section id="auth-section">
+        <div id="signup-form">
+            <h2>Crear Cuenta</h2>
+            <form id="signup">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div>
+                    <label for="identificacion">Número de Identificación:</label>
+                    <input type="number" id="identificacion" name="identificacion" required>
+                </div>
+                <div>
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+                <div>
+                    <label for="alias">Alias:</label>
+                    <input type="text" id="alias" name="alias">
+                </div>
+                <div>
+                    <label for="correo_signup">Correo Electrónico:</label>
+                    <input type="email" id="correo_signup" name="correo_signup" required>
+                </div>
+                <div>
+                    <label for="contrasena_signup">Contraseña:</label>
+                    <input type="password" id="contrasena_signup" name="contrasena_signup" required>
+                </div>
+                <div>
+                    <label for="verificar_contrasena">Verificar Contraseña:</label>
+                    <input type="password" id="verificar_contrasena" name="verificar_contrasena" required>
+                </div>
+                <button type="submit">Registrarse</button>
+                <div id="signup-error" class="error-message" style="display: none;"></div>
+            </form>
+        </div>
+
+        <div id="login-form">
+            <h2>Iniciar Sesión</h2>
+            <form id="login">
+                <div>
+                    <label for="correo_login">Correo Electrónico:</label>
+                    <input type="email" id="correo_login" name="correo_login" required>
+                </div>
+                <div>
+                    <label for="contrasena_login">Contraseña:</label>
+                    <input type="password" id="contrasena_login" name="contrasena_login" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+                <p><a href="#" id="forgot-password-link">¿Olvidaste tu contraseña?</a></p>
+                <div id="login-error" class="error-message" style="display: none;"></div>
+            </form>
+        </div>
+
+        <div id="forgot-password-form" style="display: none;">
+            <h2>Recuperar Contraseña</h2>
+            <form id="forgot-password">
+                <div>
+                    <label for="correo_recuperar">Correo Electrónico:</label>
+                    <input type="email" id="correo_recuperar" name="correo_recuperar" required>
+                </div>
+                <button type="submit">Enviar Nueva Contraseña al Correo</button>
+                <p><a href="#" id="back-to-login-link">Volver a Iniciar Sesión</a></p>
+                <div id="forgot-password-error" class="error-message" style="display: none;"></div>
+            </form>
+        </div>
+    </section>
+    <div style="text-align: center;">
+    <a href="dashboard.html">Ingresa al Dashboard</a>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

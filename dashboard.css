@@ -1,0 +1,46 @@
+/* Estilos específicos para dashboard.html */
+#dashboard-main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+#dashboard-main h2 {
+    margin-top: 0;
+}
+
+#dashboard-main p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#dashboard-main .dashboard-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#dashboard-main .dashboard-buttons a {
+    display: inline-block;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#dashboard-main .dashboard-buttons a:hover {
+    background-color: #0056b3;
+}
+
+#dashboard-nav {
+    display: none; 
+}
